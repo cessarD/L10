@@ -12,10 +12,10 @@ const connectdb = () => {
   mongoose
     .connect(uri, { useNewUrlParser: true })
     .then(() => {
-      console.log("La conexión a la base fue exitosa");
+      console.log("OK");
     })
     .catch(() => {
-      console.log("Inserte puteada");
+      console.log("NO");
     });
 };
 
